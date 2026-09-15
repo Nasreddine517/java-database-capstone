@@ -1,7 +1,11 @@
 package com.project.back_end.services;
 
 import com.project.back_end.models.Appointment;
+<<<<<<< HEAD
 import com.project.back_end.repo.AppointmentRepository;
+=======
+import com.project.back_end.repository.AppointmentRepository;
+>>>>>>> 888c0cef715d6e797292871e44c03b9ef87c6a0d
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,8 +38,11 @@ public class AppointmentService {
     public List<Appointment> getAppointmentsByPatient(Long patientId) {
         return appointmentRepository.findByPatientId(patientId);
     }
+<<<<<<< HEAD
 
     public List<Appointment> getAppointmentsByDoctor(Long doctorId) {
         return appointmentRepository.findByDoctorId(doctorId);
     }
+=======
+>>>>>>> 888c0cef715d6e797292871e44c03b9ef87c6a0d
 }

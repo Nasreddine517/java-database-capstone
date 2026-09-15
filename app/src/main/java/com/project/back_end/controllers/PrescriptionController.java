@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
+<<<<<<< HEAD
 @RequestMapping("/api/prescription")
+=======
+@RequestMapping("/prescription")
+>>>>>>> 888c0cef715d6e797292871e44c03b9ef87c6a0d
 public class PrescriptionController {
 
     @Autowired

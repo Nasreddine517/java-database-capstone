@@ -30,6 +30,7 @@ public class Appointment {
     public Appointment() {
     }
 
+<<<<<<< HEAD
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public Doctor getDoctor() { return doctor; }
@@ -40,4 +41,45 @@ public class Appointment {
     public void setAppointmentTime(LocalDateTime appointmentTime) { this.appointmentTime = appointmentTime; }
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
+=======
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public LocalDateTime getAppointmentTime() {
+        return appointmentTime;
+    }
+
+    public void setAppointmentTime(LocalDateTime appointmentTime) {
+        this.appointmentTime = appointmentTime;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+>>>>>>> 888c0cef715d6e797292871e44c03b9ef87c6a0d
 }

@@ -10,7 +10,11 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+<<<<<<< HEAD
 @RequestMapping("/api/doctor")
+=======
+@RequestMapping("/doctor")
+>>>>>>> 888c0cef715d6e797292871e44c03b9ef87c6a0d
 public class DoctorController {
 
     @Autowired
@@ -22,7 +26,12 @@ public class DoctorController {
             @PathVariable String date,
             @PathVariable String token) {
 
+<<<<<<< HEAD
         if (!doctorService.validateToken(token)) {
+=======
+        boolean isValid = doctorService.validateToken(token);
+        if (!isValid) {
+>>>>>>> 888c0cef715d6e797292871e44c03b9ef87c6a0d
             return ResponseEntity.status(401).body(Map.of("message", "Invalid or expired token"));
         }
 
@@ -32,6 +41,7 @@ public class DoctorController {
 
     @GetMapping
     public ResponseEntity<List<Doctor>> getAllDoctors() {
+<<<<<<< HEAD
         return ResponseEntity.ok(doctorService.getAllDoctors());
     }
 
@@ -52,6 +62,10 @@ public class DoctorController {
     @PostMapping
     public ResponseEntity<Doctor> addDoctor(@RequestBody Doctor doctor) {
         return ResponseEntity.ok(doctorService.saveDoctor(doctor));
+=======
+        List<Doctor> doctors = doctorService.getAllDoctors();
+        return ResponseEntity.ok(doctors);
+>>>>>>> 888c0cef715d6e797292871e44c03b9ef87c6a0d
     }
 
     @PostMapping("/login")
