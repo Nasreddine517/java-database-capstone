@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Clinic - Connexion Administrateur</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏥 Smart Clinic</div>
+        <div class="subtitle">Portail Administrateur</div>
+        <h2>Connexion</h2>
+        <form id="adminLoginForm">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username" placeholder="admin" required>
+
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+            <button type="submit">Se connecter</button>
+            <div class="error-msg" id="errorMsg"></div>
+        </form>
+        <a href="/roleSelection.html" class="back-link">&larr; Retour</a>
+    </div>
+
+    <script src="/js/adminLogin.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Clinic - Tableau de bord Patient</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .container { width: 480px; text-align: left; }
+        h2 { text-align: center; }
+        .doctor-card { border: 1px solid #d5dbdb; border-radius: 8px; padding: 12px; margin-top: 10px; }
+        .doctor-card h4 { color: #1a5276; margin-bottom: 4px; }
+        .doctor-card p { font-size: 13px; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo" style="text-align:center;">🏥 Smart Clinic</div>
+        <div class="subtitle" style="text-align:center;">Tableau de bord Patient</div>
+
+        <h2>Rechercher un médecin</h2>
+        <label for="searchInput">Nom du médecin</label>
+        <input type="text" id="searchInput" placeholder="Ex: Dupont" oninput="filterDoctorsOnChange()">
+
+        <div id="resultsContainer"></div>
+
+        <a href="/roleSelection.html" class="back-link">&larr; Déconnexion</a>
+    </div>
+
+    <script src="/js/patientDashboard.js"></script>
+</body>
+</html>

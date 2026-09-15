@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Clinic - Connexion Patient</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏥 Smart Clinic</div>
+        <div class="subtitle">Portail Patient</div>
+        <h2>Connexion</h2>
+        <form id="patientLoginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="patient@email.com" required>
+
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+            <button type="submit">Se connecter</button>
+            <div class="error-msg" id="errorMsg"></div>
+        </form>
+        <a href="/roleSelection.html" class="back-link">&larr; Retour</a>
+    </div>
+
+    <script src="/js/patientLogin.js"></script>
+</body>
+</html>
